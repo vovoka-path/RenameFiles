@@ -1,4 +1,4 @@
 # RenameFiles
 *Simple Window Form application.*
 
-Rename all files containing the string " copy" in a user-specified folder.
+Finds all files containing the substring "copy" in the name in the folder specified by the user, and removes this substring in the file names.
