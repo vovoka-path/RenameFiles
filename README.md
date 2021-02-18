@@ -33,8 +33,8 @@ Comprehensive study by searching on the Internet.
 
 ![Choose a folder](https://github.com/vovoka-path/RenameFiles/blob/master/images/ChooseFolder-RenameFiles.png) 
 ![Rename files](https://github.com/vovoka-path/RenameFiles/blob/master/images/Rename-RenameFiles.png)
-  
-    
-    
+![Error](https://github.com/vovoka-path/RenameFiles/blob/master/images/Error-Rename%20Files.png)
 
-Download: [RenameFiles.exe](https://github.com/vovoka-path/RenameFiles/raw/master/RenameFiles.zip "RenameFiles.zip")
+## Download
+
+[RenameFiles.exe](https://github.com/vovoka-path/RenameFiles/raw/master/RenameFiles.zip "RenameFiles.zip")
