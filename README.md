@@ -1,5 +1,5 @@
 # RenameFiles
-*Simple Window Form application.*
+*Simple Windows Forms application.*
 
 RenameFiles is maintained by [vovoka-path](https://github.com/vovoka-path/)
 
