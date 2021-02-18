@@ -13,12 +13,11 @@ The task was set by the photographer. This saves him the hassle of manual renami
 
 ## What I have learned
 
-1. Create Windows Forms application in Visual Studio.
-2. Use a folder dialog, search files by names and rename.
+1. Use a folder dialog, search files by names and rename in Windows Forms.
+2. Release to .exe-file in Visual Studio.
 4. Application decomposition practice.
 5. Upload a project to GitHub via Visual Studio.
-6. Create readme.md and a release on GitHub.
-
+6. Create readme.md and a release/tag on GitHub.
 
 ## How much time is spent
 
