@@ -1,6 +1,8 @@
 # RenameFiles
 *Simple Window Form application.*
 
+RenameFiles is maintained by [vovoka-path](https://github.com/vovoka-path/)
+
 ---
 
 ## Description
@@ -26,3 +28,13 @@ The task was set by the photographer. This saves him the hassle of manual renami
 ## Study way
 
 Comprehensive study by searching on the Internet.
+  
+## Screenshots  
+
+![Choose a folder](https://github.com/vovoka-path/RenameFiles/blob/master/images/ChooseFolder-RenameFiles.png) 
+![Rename files](https://github.com/vovoka-path/RenameFiles/blob/master/images/Rename-RenameFiles.png)
+  
+    
+    
+
+Download: [RenameFiles.exe](https://github.com/vovoka-path/RenameFiles/raw/master/RenameFiles.zip "RenameFiles.zip")
