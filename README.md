@@ -22,4 +22,8 @@ The task was set by the photographer. This saves him the hassle of manual renami
 
 ## How much time is spent
 
-3,5 hours
+3,5 hours.
+
+## Study way
+
+Comprehensive study by searching on the Internet.
