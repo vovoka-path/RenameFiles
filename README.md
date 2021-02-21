@@ -38,7 +38,7 @@ Comprehensive study by searching on the Internet.
 
 ## Screenshots (new branch)
 
-![Choose a folder](https://github.com/vovoka-path/RenameFiles/blob/master/images/ChooseSubstringAndFolder-RenameFiles.png.png)
+![Choose a folder](https://github.com/vovoka-path/RenameFiles/blob/master/images/ChooseSubstringAndFolder-RenameFiles.png)
 
 ## Download
 
