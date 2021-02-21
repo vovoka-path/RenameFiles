@@ -13,20 +13,21 @@ namespace RenameFiles
 {
     public partial class Form1 : Form
     {
-
+        string path = "";
+        string delSubstring = " copy."; // before file extension
+        int numberFiles = 0;
         public Form1()
         {
             InitializeComponent();
         }
 
-        string path = "";
-
+        // --- form actions ---
         private void button_ChooseFolder_Click(object sender, EventArgs e)
         {
             if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
             {
                 path = folderBrowserDialog.SelectedPath;
-                label_Folder.Text = path;
+                label_Folder.Text = path; // show to user
 
                 if (!Directory.Exists(path))
                 {
@@ -42,20 +43,22 @@ namespace RenameFiles
             RenameFiles(path);
         }
 
+        // --- methods ---
         private void GetFileNames(string path)
         {
             try
             {
                 // Only get files that contain the subsring " copy".
-                string[] dirs = Directory.GetFiles(path, "* copy*");
+                string[] dirs = Directory.GetFiles(path, $"*{delSubstring}*");
+                numberFiles = dirs.Length;
 
                 listBox_AllFiles.Items.Add($"> В папке {path}");
-                listBox_AllFiles.Items.Add($"найдено {dirs.Length} файлов, содержащих ' copy':");
+                listBox_AllFiles.Items.Add($"найдено {numberFiles} файлов, содержащих '{delSubstring}':");
                 listBox_AllFiles.Items.Add("");
 
                 foreach (string dir in dirs)
                 {
-                    listBox_AllFiles.Items.Add($"> {Path.GetFileName(dir)}"); // get namefile.jpg
+                    listBox_AllFiles.Items.Add($"> {Path.GetFileName(dir)}");
                 }
             }
             catch (Exception ex)
@@ -68,18 +71,28 @@ namespace RenameFiles
 
         private void RenameFiles(string path)
         {
+            if (path == "") {
+                MessageBox.Show("Вы не выбрали папку!");
+                return;
+            }
+            else if (numberFiles < 1) {
+                MessageBox.Show("Нет файлов для переименования!");
+                return;
+            }
+
             listBox_AllFiles.Items.Clear();
             listBox_AllFiles.Items.Add("> Переименование:");
             listBox_AllFiles.Items.Add("");
 
-            string[] dirs = Directory.GetFiles(path, "* copy*");
+            string[] dirs = Directory.GetFiles(path, $"*{delSubstring}*");
             string dirCopy;
+            string messageResultRenamed;
             int numberRenamedFiles = 0;
 
             foreach (string dir in dirs)
             {
-                dirCopy = dir.Replace(" copy.", ".");
-                string messageResultRenamed = $"{Path.GetFileName(dir) } -> {Path.GetFileName(dirCopy)}";
+                dirCopy = dir.Replace($"{delSubstring}", "");
+                messageResultRenamed = $"{Path.GetFileName(dir) } -> {Path.GetFileName(dirCopy)}";
 
                 if (!File.Exists(dirCopy))
                 {
