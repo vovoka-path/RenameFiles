@@ -20,6 +20,7 @@ The task was set by the photographer. This saves him the hassle of manual renami
 4. Application decomposition practice.
 5. Upload a project to GitHub via Visual Studio.
 6. Create readme.md and a release/tag on GitHub.
+7. Commit and create brunches.
 
 ## How much time is spent
 
