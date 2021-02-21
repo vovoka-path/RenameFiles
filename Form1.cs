@@ -91,7 +91,7 @@ namespace RenameFiles
 
             foreach (string dir in dirs)
             {
-                dirCopy = dir.Replace($"{delSubstring}", "");
+                dirCopy = dir.Replace($"{delSubstring}", ".");
                 messageResultRenamed = $"{Path.GetFileName(dir) } -> {Path.GetFileName(dirCopy)}";
 
                 if (!File.Exists(dirCopy))
