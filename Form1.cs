@@ -14,13 +14,15 @@ namespace RenameFiles
     public partial class Form1 : Form
     {
 
+        string path = "";
+        string delSubstring = " copy"; // * copy*
+        string textBoxDefault = "Введите набор символов, которые нужно удалить";
+
         public Form1()
         {
             InitializeComponent();
+            textBox_InsertSubstring.Text = textBoxDefault;
         }
-
-        string path = "";
-        string delSubstring = " copy"; // * copy*
 
         private void button_ChooseFolder_Click(object sender, EventArgs e)
         {
@@ -69,11 +71,23 @@ namespace RenameFiles
 
         private void RenameFiles(string path)
         {
+            delSubstring = textBox_InsertSubstring.Text;
+
+            if (delSubstring == "" | delSubstring == "Введите набор символов, которые нужно удалить")
+            {
+                textBox_InsertSubstring.Text = textBoxDefault;
+                MessageBox.Show("Вы не указали символы для удаления!");
+                return;
+            }
+            else if (path == "")
+            {
+                MessageBox.Show("Вы не выбрали папку!");
+                return;
+            }
+
             listBox_AllFiles.Items.Clear();
             listBox_AllFiles.Items.Add("> Переименование:");
             listBox_AllFiles.Items.Add("");
-
-            delSubstring = textBox_InsertSubstring.Text;
 
             string[] dirs = Directory.GetFiles(path, $"*{delSubstring}*");
             string dirCopy;
