@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace RenameFiles
@@ -91,7 +84,7 @@ namespace RenameFiles
 
             foreach (string dir in dirs)
             {
-                dirCopy = dir.Replace($"{delSubstring}", "");
+                dirCopy = dir.Replace($"{delSubstring}", ".");
                 messageResultRenamed = $"{Path.GetFileName(dir) } -> {Path.GetFileName(dirCopy)}";
 
                 if (!File.Exists(dirCopy))
