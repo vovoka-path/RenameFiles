@@ -7,7 +7,7 @@ RenameFiles is maintained by [vovoka-path](https://github.com/vovoka-path/)
 
 ## Description
 
-Finds all files containing the specifyed substring by user in the name in the folder specified by the user, and removes this substring in the file names.
+Finds all files containing the specifyed substring (default = ' copy') by user in the name in the folder specified by the user, and removes this substring in the file names.
 
 ## Reason for creation
 
@@ -20,7 +20,7 @@ The task was set by the photographer. This saves him the hassle of manual renami
 4. Application decomposition practice.
 5. Upload a project to GitHub via Visual Studio.
 6. Create readme.md and a release/tag on GitHub.
-7. Commit and create brunches.
+7. Commit and create branches.
 
 ## How much time is spent
 
@@ -32,7 +32,13 @@ Comprehensive study by searching on the Internet.
   
 ## Screenshots  
 
-![Choose a folder](https://github.com/vovoka-path/RenameFiles/blob/master/images/ChooseSubstringAndFolder-RenameFiles.png.png) 
+![Choose a folder](https://github.com/vovoka-path/RenameFiles/blob/master/images/ChooseFolder-RenameFiles.png) 
+![Rename files](https://github.com/vovoka-path/RenameFiles/blob/master/images/Rename-RenameFiles.png)
+![Error](https://github.com/vovoka-path/RenameFiles/blob/master/images/Error-Rename%20Files.png)
+
+## Screenshots (new branch)
+
+![Choose a folder](https://github.com/vovoka-path/RenameFiles/blob/master/images/ChooseSubstringAndFolder-RenameFiles.png.png)
 
 ## Download
 
